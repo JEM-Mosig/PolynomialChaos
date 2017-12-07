@@ -1,0 +1,7 @@
+# DO NOT TRACK:
+
+# IntelliJ IDEA files
+*.iml
+
+# ignore notebook files for now
+*.nb
