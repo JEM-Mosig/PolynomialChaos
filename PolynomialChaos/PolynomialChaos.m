@@ -2,11 +2,9 @@
 
 BeginPackage["PolynomialChaos`"]
 
-
-Needs["FastIntegrate`"]
-Needs["SubOptions`"]
-Needs["MultiIndex`"]
-
+Needs["PolynomialChaos`SubOptions`"]
+Needs["PolynomialChaos`FastIntegrate`"]
+Needs["PolynomialChaos`MultiIndex`"]
 
 Begin["PolynomialChaos`"]
 

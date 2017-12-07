@@ -1,9 +1,9 @@
 (* ::Package:: *)
 
-BeginPackage["MultiIndex`"]
+BeginPackage["PolynomialChaos`MultiIndex`"]
 
 
-Begin["MultiIndex`"]
+Begin["PolynomialChaos`MultiIndex`"]
 
 
 (* ::Section:: *)
@@ -163,7 +163,7 @@ NextPermutation[l_List] := Module[{n = Length[l], i, j, t, nl = l},
 End[] (* `Private` *)
 
 
-End[] (* PlotTools` *)
+End[] (* PolynomialChaos`MultiIndex` *)
 
 
-EndPackage[]; (* PlotTools` *)
+EndPackage[]; (* PolynomialChaos`MultiIndex` *)

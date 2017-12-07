@@ -1,9 +1,9 @@
 (* ::Package:: *)
 
-BeginPackage["FastIntegrate`"]
+BeginPackage["PolynomialChaos`FastIntegrate`"]
 
 
-Begin["FastIntegrate`"]
+Begin["PolynomialChaos`FastIntegrate`"]
 
 
 (* ::Section:: *)
@@ -73,7 +73,7 @@ IntegratePolynomial[expr_, var1_, varx__] := Fold[
 End[] (* `Private` *)
 
 
-End[] (* FastIntegrate` *)
+End[] (* PolynomialChaos`FastIntegrate` *)
 
 
-EndPackage[]; (* FastIntegrate` *)
+EndPackage[]; (* PolynomialChaos`FastIntegrate` *)

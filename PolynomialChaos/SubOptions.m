@@ -1,9 +1,8 @@
 (* ::Package:: *)
 
-BeginPackage["SubOptions`"]
+BeginPackage["PolynomialChaos`SubOptions`"]
 
-
-Begin["SubOptions`"]
+Begin["PolynomialChaos`SubOptions`"]
 
 
 (* ::Section:: *)
@@ -70,7 +69,7 @@ SubOption[___] := (
 End[] (* `Private` *)
 
 
-End[] (* SubOptions` *)
+End[] (* PolynomialChaos`SubOptions` *)
 
 
-EndPackage[] (* SubOptions` *)
+EndPackage[] (* PolynomialChaos`SubOptions` *)
