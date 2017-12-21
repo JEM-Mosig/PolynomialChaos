@@ -112,17 +112,17 @@ Begin["`Private`"];
 
 MultiIndexList[length_, n_, OptionsPattern[]] :=
 With[{
-	array = Switch[OptionValue[Method], 
-		"NormMax", Select[Tuples[Array[Identity, n + 1, 0], length], (Plus@@# <= n)&],
-		"EachMax", Tuples[Array[Identity, n + 1, 0], length]
-	],
-	orderFun = Switch[OptionValue[Ordering], 
-		"GradedLexicographic", MultiIndex`OrderingFunctions`GradedLexicographicOrderingFunction,
-		"GradedReverseLexicographic", MultiIndex`OrderingFunctions`GradedReverseLexicographicOrderingFunction,
-		"Lexicographic", MultiIndex`OrderingFunctions`LexicographicOrderingFunction,
-		_, OptionValue[Ordering]
-	]
-},
+		array = Switch[OptionValue[Method],
+			"NormMax", Select[Tuples[Array[Identity, n + 1, 0], length], (Plus@@# <= n)&],
+			"EachMax", Tuples[Array[Identity, n + 1, 0], length]
+		],
+		orderFun = Switch[OptionValue[Ordering],
+			"GradedLexicographic", PolynomialChaos`MultiIndex`OrderingFunctions`GradedLexicographicOrderingFunction,
+			"GradedReverseLexicographic", PolynomialChaos`MultiIndex`OrderingFunctions`GradedReverseLexicographicOrderingFunction,
+			"Lexicographic", PolynomialChaos`MultiIndex`OrderingFunctions`LexicographicOrderingFunction,
+			_, OptionValue[Ordering]
+		]
+	},
 	Sort[array, orderFun]
 ]
 
